@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/login?next=<%= redirect %>" method="POST">
+            <h3>Login</h3>
+            <input name="username" required class="input" type="text" placeholder="username">
+            <input name="password" required class="input" type="password" placeholder="password">
+            <input class="button" type="submit" value="Submit">
+            <div>
+                <p>username : user123</p>
+                <p>password : 12345678</p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

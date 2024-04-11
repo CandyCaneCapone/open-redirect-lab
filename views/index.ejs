@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="welcome_message">Welcome</h2>
+        <% if (!isLoggedIn) { %>
+            <button class="button"><a href="/login?next=http://localhost:5000/">Login</a></button>
+        <% } %>
+    </header>
+
+    <main>
+        <h3>Open Redirect</h3>
+        <p class="intro">open redirect is a vulnerability that exists in web applications where a user is redirected from a trusted site to an arbitrary URL specified by the attacker. This vulnerability arises when a web application takes a user-controlled input, such as a URL parameter in a redirect, and uses it to redirect the user without proper validation.</p>
+        <img src="image.png" alt="open redirect">
+    </main>
+</body>
+</html>
